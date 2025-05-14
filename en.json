@@ -1,1 +1,5 @@
-{ "title": "Welcome to Moroccan Blog" }
+
+{
+    "welcome_message": "Welcome to Moroccan Blog",
+    "post1_link": "Post 1"
+}

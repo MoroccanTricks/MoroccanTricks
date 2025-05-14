@@ -1,3 +1,4 @@
+
 function setLanguage(lang) {
     fetch(`${lang}.json`)
         .then(response => response.json())

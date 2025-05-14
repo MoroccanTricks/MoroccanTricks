@@ -1,1 +1,11 @@
-body { font-family: 'Amiri', serif; background: #f8f9fa; color: #222; }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    padding: 20px;
+}
+.lang-switch button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
