@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Moroccan Blog</title>
+    <meta charset="UTF-8">
+    <title>Moroccan Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
 </head>
 <body>
-<h1>Welcome to Moroccan Blog</h1>
-<a href="post1.html">Post 1</a>
+    <div class="lang-switch">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('ar')">العربية</button>
+        <button onclick="setLanguage('es')">Español</button>
+    </div>
+
+    <h1 data-lang="welcome_message">Welcome to Moroccan Blog</h1>
+    <a href="post1.html" data-lang="post1_link">Post 1</a>
 </body>
 </html>
