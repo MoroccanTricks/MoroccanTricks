@@ -1,0 +1,21 @@
+<!-- contact_us.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Moroccan Blog</title>
+</head>
+<body>
+  <header><h1>Contact Us</h1></header>
+  <div class="content">
+    <a href="index.html" class="back">← Back to Home</a>
+    <p>Got questions or ideas? We'd love to hear from you!</p>
+    <form action="mailto:contact@moroccanblog.com" method="post" enctype="text/plain">
+      <label>Name:</label><br><input type="text" name="name"><br>
+      <label>Email:</label><br><input type="email" name="email"><br>
+      <label>Message:</label><br><textarea name="message" rows="6"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>
