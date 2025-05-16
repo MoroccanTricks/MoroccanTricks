@@ -1,4 +1,17 @@
-/* General Reset */
+/*
+Theme Name: Moroccan Blog Theme
+Theme URI: https://yourwebsite.com
+Author: Your Name
+Author URI: https://yourwebsite.com
+Description: A simple Moroccan-themed WordPress style.css for blog with header design.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: moroccan-blog-theme
+Tags: custom-background, custom-logo, custom-menu, translation-ready, responsive-layout
+*/
+
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +25,8 @@ body {
   line-height: 1.6;
 }
 
-header {
+/* Header */
+.site-header {
   background-color: #0c4a3b;
   color: white;
   padding: 2rem 1rem;
@@ -22,12 +36,13 @@ header {
   background-blend-mode: overlay;
 }
 
-header h1 {
+.site-header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-nav {
+/* Navigation */
+.main-navigation {
   background-color: #d4a373;
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +51,7 @@ nav {
   padding: 1rem;
 }
 
-nav a {
+.main-navigation a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -44,12 +59,15 @@ nav a {
   transition: background 0.3s ease;
 }
 
-nav a:hover {
+.main-navigation a:hover,
+.main-navigation .current-menu-item > a {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
 
-.content, .section {
+/* Content */
+.site-content,
+.content-area {
   max-width: 900px;
   margin: auto;
   padding: 2rem;
@@ -63,6 +81,7 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Back link */
 a.back {
   display: inline-block;
   margin-bottom: 1rem;
@@ -75,10 +94,19 @@ a.back:hover {
   text-decoration: underline;
 }
 
-footer {
+/* Footer */
+.site-footer {
   background-color: #0c4a3b;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-navigation {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
