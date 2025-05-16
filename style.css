@@ -1,11 +1,84 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fdfdfd;
-    padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  line-height: 1.6;
 }
-.lang-switch button {
-    margin-right: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
+
+header {
+  background-color: #0c4a3b;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b5/Moroccan_tile_pattern.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  background-color: #d4a373;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.content, .section {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.section img,
+.content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+a.back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #00695c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.back:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #0c4a3b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
